@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+.loader {
+  color: darkgoldenrod;
+  position: absolute;
+  top: 62%;
+  left: 65%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.calpage {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  margin-left: 15vw;
+  height: 100vh;
+}
+.toppart {
+  height: 100vh;
+  width: 85vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 15vh;
+}
+.bottompart {
+  height: 9vh;
+  width: 84.5vw;
+  background-color: darkgoldenrod;
+  color: white;
+  display: flex;
+  padding-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  margin-top: 91vh;
+}
+.hoverOnCursor:hover {
+  cursor: pointer;
+}
+
+.sider {
+  position: relative;
+  left: 17.5%;
+}
+
+.commonbox {
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: white;
+  height: 33vh;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.2rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s;
+}
+.slider{
+  width: 10vw;
+}
+@media(min-width: 1200px) and (max-width: 1500px){
+  .commonbox{
+    width: 20vw;
+  }
+  .slider{
+    width: 15vw;
+  }
+
+}
+@media(max-width: 1200px)and(min-width: 1000px){
+  .commonbox{
+    width: 24vw;
+  }
+  .slider{
+    width: 20vw;
+  }
+}
+@media(max-width: 1000px){
+  .commonbox{
+    width: 30vw;
+  }
+  .slider{
+    width: 20vw;
+  }
+}
+.commonbox::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+.commonbox:hover {
+  transform: scale(1.1);
+}
+
+.taskbox {
+  background-image: linear-gradient(-45deg, #ffec61, #f321d7);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.taskbox .buthover {
+  background-image: linear-gradient(45deg, #ffec61, #f321d7);
+}
+
+.popupBtn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+.mediumtaskbox {
+  background-image: linear-gradient(-45deg, #f403d1, #64b5f6);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mediumtaskbox .buthover {
+  background-image: linear-gradient(45deg, #f403d1, #64b5f6);
+}
+.lowtaskbox {
+  background-image: linear-gradient(-45deg, #24ff72, #9a4eff);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.lowtaskbox .buthover {
+  background-image: linear-gradient(45deg, #24ff72, #9a4eff);
+}
+
+.newtaskbutton {
+  border-radius: 11px;
+  background-color: bisque;
+  color: black;
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 7vh;
+  font-weight: bolder;
+  font-size: 2.3vh;
+}
+
+.prioritydesc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3vw;
+  font-size: 2vh;
+  cursor: pointer;
+}
+.redbox {
+  background-image: linear-gradient(-45deg, #ffec61, #f321d7);
+  height: 3vh;
+  width: 3vh;
+  margin-right: 0.5vw;
+}
+.yellowbox {
+  background-image: linear-gradient(-45deg, #24ff72, #9a4eff);
+  height: 3vh;
+  width: 3vh;
+  margin-right: 0.5vw;
+}
+.violetbox {
+  background-image: linear-gradient(-45deg, #f403d1, #64b5f6);
+  height: 3vh;
+  width: 3vh;
+  margin-right: 0.5vw;
+}
+.newtaskbutton:hover {
+  background-color: rgb(236, 193, 140);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.New-Task {
+  position: absolute;
+  width: 45vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.new-task-div {
+  width: 90%;
+  max-width: 600px;
+}
+
+.forhover :hover {
+  color: white;
+}
+.toppar2 {
+  margin: 0%;
+  padding: 0%;
+}
+.topbar {
+  margin: 0%;
+}
+.high {
+  height: 5px;
+  background-color: #fdc379 ;
+}
+.med {
+  background-color: #59afb1;
+}
+.low {
+  background-color: #7a9af0;
+}
+.formarea {
+  padding: 0vw 0vw 0vw 1vw;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+}
+.fields {
+  width: 88%;
+  border: none;
+  margin-top: 0.5vh;
+  margin-bottom: 1.5vh;
+
+  padding: 0%;
+  border-bottom: 2px solid red;
+  background-color: rgba(128, 128, 124, 0);
+  color: black;
+  text-decoration: solid;
+  font-size: 1.8vh;
+}
+
+.subbut {
+  width: 30%;
+  background-color: #04ef0d;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 2%;
+  height: 14%;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+.subbut:active {
+  transform: translate(0px, 2px);
+}
+.subbut:hover {
+  background-color: #2ec633;
+  cursor: pointer;
+}
+.buthover {
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.1rem 1rem;
+  border-radius: 50rem;
+  color: white;
+}
+.buthover:hover {
+  color: black;
+}
+
+.Sort-Tasks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+}
+
+.select-option {
+  width: auto;
+  height: 5vh;
+  font-size: 2.2vh;
+  margin-top: 2vh;
+}
+.select-option:focus {
+  outline: none;
+  border: none;
+}
+
+.sorted-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+}
+
+.task-object {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.task-elem {
+  font-size: 2vh;
+  text-align: center;
+  width: 25%;
+}
+.task-elem-heading {
+  font-size: 2.5vh;
+  text-align: center;
+  width: 25%;
+}
+
+@media screen and (max-width: 1000px) {
+  .Sort-Tasks {
+    width: 55vw;
+  }
+  .New-Task {
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Sort-Tasks {
+    width: 65vw;
+  }
+  .New-Task {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .newtaskbutton {
+    font-size: 2vh;
+    margin-left: 1vw;
+    margin-right: 2vw;
+  }
+  .Sort-Tasks {
+    width: 69vw;
+  }
+  .New-Task {
+    width: 69vw;
+  }
+}
+option {
+  color: #000;
+}
