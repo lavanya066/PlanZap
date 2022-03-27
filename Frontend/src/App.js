@@ -1,5 +1,3 @@
-
-   
 import "./CSSComponents/App.css";
 import React, { useState, useEffect } from "react";
 import Login from "./loginpage";
